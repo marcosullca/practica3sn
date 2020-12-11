@@ -62,7 +62,7 @@ class ContactsController extends Controller
             'preview_url'=>$url
         ]);
         $contact->save();
-        return redirect('/contacts')->with('success','Contacto registrado');
+        return redirect('/practica3/contacts')->with('success','Contacto registrado');
     }
 
     /**
@@ -109,7 +109,7 @@ class ContactsController extends Controller
         $contact->correo=$request->get('correo');
         $contact->telefono=$request->get('telefono');
         $contact->save();
-        return redirect('/contacts')->with('success','Contacto Actualizado');
+        return redirect('/practica3/contacts')->with('success','Contacto Actualizado');
     }
     /**
      * Remove the specified resource from storage.
@@ -121,6 +121,6 @@ class ContactsController extends Controller
     {
         $contact=Contactos::find($id);
         $contact->delete();
-        return redirect('/contacts')->with('success','Contacto Eliminado');
+        return redirect('/practica3/contacts')->with('success','Contacto Eliminado');
     }
 }

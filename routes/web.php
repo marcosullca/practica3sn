@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 // Route::resource('documents', 'DocumentController');
-Route::resource('contacts', 'ContactsController');
+Route::resource('practica3/contacts', 'ContactsController');
 
 Auth::routes();
 
