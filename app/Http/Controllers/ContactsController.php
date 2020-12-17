@@ -16,6 +16,7 @@ class ContactsController extends Controller
     public function index()
     {
         $contacts=Contactos::all();
+        // $archivo_aws=Storage::disk('s3')->files('imagenes/foodLogin.png');
         return view('contacts.index',compact('contacts'));
     }
 

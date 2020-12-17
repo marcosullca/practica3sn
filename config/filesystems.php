@@ -63,6 +63,8 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
+            'visibility'=>'public',
+            'token'=>env('AWS_SESSION_TOKEN')
         ],
 
     ],
